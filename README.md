@@ -3,8 +3,7 @@
 - View/download file in salesforce
 - Delete file from Salesforce 
 
-This application will helpful for filemamanagement in SalesForce
-Internally calling web API.
+
 
 # Pre-requisites :
 - IIS version : 10
