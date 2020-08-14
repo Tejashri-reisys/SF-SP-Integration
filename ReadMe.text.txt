@@ -1,8 +1,3 @@
-# SF-SP-Integration
-This application will helpful for filemamanagement in SalesForce
-Internally calling web API.
-
-
 <?xml version="1.0" encoding="utf-8" ?>
 <parameters>
   
