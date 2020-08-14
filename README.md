@@ -10,6 +10,10 @@
 - .NET framework version : 4.7
 - Web-Installer : Need to install Web-Installer
 
+# Paramters Settings :
+
+
+
 # Settings in SharePoint site:
 How to enable external sharing for site to access public link for external user
 Below setting is done in SharePoint Administrator Portal by SharePoint Admins only
