@@ -2,143 +2,15 @@
 This application will helpful for filemamanagement in SalesForce
 Internally calling web API.
 
+# Pre-requisites :
+IIS version : 10
+.NET framework version : 4.7
+Web-Installer : Need to install Web-Installer
 
-<?xml version="1.0" encoding="utf-8" ?>
-<parameters>
-  
-  <parameter name="SPPublicSiteUrl"
-    description="Please provide the SharePoint Public Site Url that you want to store public files."
-    defaultValue="https://<site url>/sites/<PublicSiteUrl>/" tag="">
+# Settings in SharePoint site:
+How to enable external sharing for site to access public link for external user
+Below setting is done in SharePoint Administrator Portal by SharePoint Admins only
 
-    <parameterEntry kind="XmlFile"
-        scope="obj\\Release\\Package\\PackageTmp\\Web\.config$"
-        match="/configuration/appSettings/add[@key='SPPublicSiteUrl']/@value"/>
-  </parameter>
 
-  <parameter name="SPPrivateSiteUrl"
-    description="Please provide the SharePoint private Site Url that you want to store private files."
-    defaultValue="https://<site url>/sites/<PrivateSiteUrl>/" tag="">
 
-    <parameterEntry kind="XmlFile"
-        scope="obj\\Release\\Package\\PackageTmp\\Web\.config$"
-        match="/configuration/appSettings/add[@key='SPPrivateSiteUrl']/@value"/>
-  </parameter>
-
-  <parameter name="SPPublicDocumentLibrary"
-  description="Please provide the SharePoint Document Library name where public files will be uploaded."
-  defaultValue="<PublicDocumentLibrary>" tag="">
-
-    <parameterEntry kind="XmlFile"
-        scope="obj\\Release\\Package\\PackageTmp\\Web\.config$"
-        match="/configuration/appSettings/add[@key='SPPublicDocumentLibrary']/@value"/>
-  </parameter>
-
-  <parameter name="SPPrivateDocumentLibrary"
-  description="Please provide the SharePoint Document Library name where private files will be uploaded."
-  defaultValue="<PrivateDocumentLibrary>" tag="">
-
-    <parameterEntry kind="XmlFile"
-        scope="obj\\Release\\Package\\PackageTmp\\Web\.config$"
-        match="/configuration/appSettings/add[@key='SPPrivateDocumentLibrary']/@value"/>
-  </parameter> 
-
-  <parameter name="UploadedFileUrl"
-  description="Please provide the SharePoint private Site Url that will return uploaded private file URL for view purpose."
-  defaultValue="https://<site url>" tag="">
-
-    <parameterEntry kind="XmlFile"
-        scope="obj\\Release\\Package\\PackageTmp\\Web\.config$"
-        match="/configuration/appSettings/add[@key='UploadedFileUrl']/@value"/>
-  </parameter>
-
-  <parameter name="UploadedFileUrlForDownload"
-description="Please provide the SharePoint private Site Url that will return uploaded private file URL for download purpose."
-defaultValue="_layouts/15/download.aspx?SourceUrl=https://<site url>" tag="">
-
-    <parameterEntry kind="XmlFile"
-        scope="obj\\Release\\Package\\PackageTmp\\Web\.config$"
-        match="/configuration/appSettings/add[@key='UploadedFileUrlForDownload']/@value"/>
-  </parameter>
-
-  <parameter name="UploadedPublicFileUrlForDownload"
-description="Please provide the SharePoint public Site Url that will return uploaded public file URL for view purpose."
-defaultValue="_layouts/15/download.aspx?share=" tag="">
-
-    <parameterEntry kind="XmlFile"
-        scope="obj\\Release\\Package\\PackageTmp\\Web\.config$"
-        match="/configuration/appSettings/add[@key='UploadedPublicFileUrlForDownload']/@value"/>
-  </parameter>
-
-  <parameter name="UserName"
-description="Please provide the SharePoint Site User Name to connect."
-defaultValue="<SharePoint Site UserName>" tag="">
-
-    <parameterEntry kind="XmlFile"
-        scope="obj\\Release\\Package\\PackageTmp\\Web\.config$"
-        match="/configuration/appSettings/add[@key='UserName']/@value"/>
-  </parameter>
-
-  <parameter name="Password"
-description="Please provide the SharePoint Site Password to connect."
-defaultValue="<SharePoint Site Password>" tag="">
-
-    <parameterEntry kind="XmlFile"
-        scope="obj\\Release\\Package\\PackageTmp\\Web\.config$"
-        match="/configuration/appSettings/add[@key='Password']/@value"/>
-  </parameter>
-
-  <parameter name="LoginEndpoint"
-  description="Please provide Salesforce login endpoint, to connecting with Salesforce through API we need to provide this URL."
-  defaultValue="https://<Salesforce login endpoint>/services/oauth2/token" tag="">
-
-    <parameterEntry kind="XmlFile"
-        scope="obj\\Release\\Package\\PackageTmp\\Web\.config$"
-        match="/configuration/appSettings/add[@key='LoginEndpoint']/@value"/>
-  </parameter>
-  
-  <parameter name="SFAPICallAfterMilliseconds"
-    description="While uploading file if Web API took more than 1.4 Minute then we are calling Salesforce API to update Log file, that time we are considering this value."
-    defaultValue="<Milliseconds>" tag="">
-
-    <parameterEntry kind="XmlFile"
-        scope="obj\\Release\\Package\\PackageTmp\\Web\.config$"
-        match="/configuration/appSettings/add[@key='SFAPICallAfterMilliseconds']/@value"/>
-  </parameter>
-
-  <parameter name="SPItemThresholdLimit"
-   description="Please provide the SharePoint Site Threshold Limit to upload maximum files in folder."
-   defaultValue="<ThresholdLimit>" tag="">
-
-    <parameterEntry kind="XmlFile"
-        scope="obj\\Release\\Package\\PackageTmp\\Web\.config$"
-        match="/configuration/appSettings/add[@key='SPItemThresholdLimit']/@value"/>
-  </parameter>
-
-  <parameter name="SFRequestURI"
-   description="As Salesforce default timeout is 2 minutes, if user uploading large file like 2 GB then it will take more than 2 minutes to upload file. In this case Salesforce will not get response because of timeout. So to handle this from Web API side we are calling Salesforce API which can update Log file. In this Log file we are updating all the response values which we can get after file uploaded. To update Log from Salesforce we need this request URI."
-   defaultValue="https://<Salesforce site URL>/services/data/<version number i.e (v4.0)>/sobjects/Sharepoint_service_Log__c" tag="">
-
-    <parameterEntry kind="XmlFile"
-        scope="obj\\Release\\Package\\PackageTmp\\Web\.config$"
-        match="/configuration/appSettings/add[@key='SFRequestURI']/@value"/>
-  </parameter>
-
-  <parameter name="ClientSecret"
-   description="Please provide the Salesforce Site ClientSecret to connect with Salesforce through API"
-   defaultValue="<Salesforce Site ClientSecret>" tag="">
-
-    <parameterEntry kind="XmlFile"
-        scope="obj\\Release\\Package\\PackageTmp\\Web\.config$"
-        match="/configuration/appSettings/add[@key='ClientSecret']/@value"/>
-  </parameter>
-
-  <parameter name="ClientId"
-  description="Please provide the Salesforce Site ClientId to connect with Salesforce through API"
-  defaultValue="<Salesforce Site ClientId>" tag="">
-
-    <parameterEntry kind="XmlFile"
-        scope="obj\\Release\\Package\\PackageTmp\\Web\.config$"
-        match="/configuration/appSettings/add[@key='ClientId']/@value"/>
-  </parameter>
-
-</parameters>
+ 
