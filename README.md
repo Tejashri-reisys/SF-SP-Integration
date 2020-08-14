@@ -11,7 +11,7 @@
 - Web-Installer : Need to install Web-Installer
 
 # Paramters Settings :
-
+Refer ReadMe.text.txt to set parameters used in application.
 
 
 # Settings in SharePoint site:
