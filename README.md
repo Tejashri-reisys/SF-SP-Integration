@@ -1,4 +1,8 @@
-# SF-SP-Integration
+# Upload SalesForce File(s) in SharePoint Online Document Library 
+-Upload file from SalesForce to SharePoint Online
+-View/download file in salesforce
+-Delete file from Salesforce 
+
 This application will helpful for filemamanagement in SalesForce
 Internally calling web API.
 
