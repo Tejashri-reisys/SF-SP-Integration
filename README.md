@@ -12,12 +12,13 @@
 - Web-Installer : Need to install Web-Installer
 
 ## Paramters Settings :
-Refer ReadMe.text.txt to set parameters used in application.
+Refer ParametersSetting.txt to set parameters used in application.
 
 
 ## Settings in SharePoint site:
 How to enable external sharing for site to access public link for external user
-Below setting is done in SharePoint Administrator Portal by SharePoint Admins only
+this setting is done in SharePoint Administrator Portal by SharePoint Admins only.
+Please refer SharePointExternalSharing.docx file.
 
 
 
