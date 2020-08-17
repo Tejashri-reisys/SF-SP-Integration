@@ -10,6 +10,7 @@
 - IIS version : 10
 - .NET framework version : 4.7
 - Web-Installer : Need to install Web-Installer
+- Make sure that 'TempDownloads' folder is present in root folder.
 
 ## Paramters Settings :
 Please refer ParametersSetting.txt to set parameters used in application.
