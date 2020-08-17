@@ -2,7 +2,7 @@
 - Upload file from SalesForce to SharePoint Online
 - View/download file in salesforce
 - Delete file from Salesforce 
--Generate public link for sharepoint file and can be share with external users.
+- Generate public link for sharepoint file and can be share with external users.
 
 
 
