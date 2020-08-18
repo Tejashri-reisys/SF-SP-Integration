@@ -12,7 +12,7 @@
 - Web-Installer : Need to install Web-Installer
 - Make sure that 'TempDownloads' folder is present in root folder.
 
-## Paramters Settings :
+## Parameters Settings :
 Please refer ParametersSetting.txt to set parameters used in application.
 
 
