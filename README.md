@@ -30,6 +30,7 @@ Please refer EnableSharePointExternalSharingSettings.docx file to enable externa
 This setting is done in SharePoint Administrator Portal by SharePoint Admins only.
 
 
-
+## How to Publish web deployment package to IIS
+please refer "How to publish web deployment package to IIS.docx" file to publish web deployment package to IIS.
 
  
