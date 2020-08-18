@@ -1,4 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <setParameter name="IIS Web Application Name" value="SFSPFileManagement" />
+  <setParameter name="SPPublicSiteUrl" value="https://reisystemsinc257.sharepoint.com/sites/NFWFExternal/" />
+  <setParameter name="SPPrivateSiteUrl" value="https://reisystemsinc257.sharepoint.com/sites/NFWFInternal/" />
+  <setParameter name="SPPublicDocumentLibrary" value="NFWF External Documents" />
+  <setParameter name="SPPrivateDocumentLibrary" value="NFWF Internal Documents" />
+  <setParameter name="UploadedFileUrl" value="https://reisystemsinc257.sharepoint.com" />
+  <setParameter name="UploadedFileUrlForDownload" value="_layouts/15/download.aspx?SourceUrl=https://reisystemsinc257.sharepoint.com" />
+  <setParameter name="UploadedPublicFileUrlForDownload" value="_layouts/15/download.aspx?share=" />
+  <setParameter name="UserName" value="reisupport@reisystems.com" />
+  <setParameter name="Password" value="TSVrtQaV?6nx" />
+  <setParameter name="LoginEndpoint" value="https://nfwf-dev--dev.my.salesforce.com/services/oauth2/token" />
+  <setParameter name="SFAPICallAfterMilliseconds" value="1000000" />
+  <setParameter name="SPItemThresholdLimit" value="4900" />
+  <setParameter name="SFRequestURI" value="https://nfwf-dev--dev.my.salesforce.com/services/data/v48.0/sobjects/Sharepoint_service_Log__c" />
+  <setParameter name="ClientSecret" value="C6390425347D280077424297E617DE63A3E033ACD7BB065E2D4234F09F633A06" />
+  <setParameter name="ClientId" value="3MVG9_4NR96cWRpH1trnW0fHTVNXiuTs4S0CkPRrQ.NWxtqFB4ltExBMxc.5VuE7sY740kGYWhqcCa3nulTzS" />
 </parameters>
