@@ -17,12 +17,12 @@ Please refer ParametersSetting.txt to set parameters used in application.
 
 ## SharePoint Settings :
 Please create following Meatadata columns in SharePoint Libraries(Internal/External)
-- Classification
-- Description
-- UploadedBy
-- UploadedDate
-- ModifiedBy
-- ModifiedDate
+- Classification:Single Line of text
+- Description:Multiple Line of Text(Plain Text)
+- UploadedBy:Single Line of text
+- UploadedDate:Single Line of text
+- ModifiedBy:Single Line of text
+- ModifiedDate:Single Line of text
 
 ## How to enable external sharing for the SharePoint site:
  This application is alllow to share files uploaded in SharePoint Document Library to External Users(Users who don't have sharepoint access).
