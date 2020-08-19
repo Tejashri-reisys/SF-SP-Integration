@@ -65,7 +65,7 @@ defaultValue="_layouts/15/download.aspx?share=" tag="">
   </parameter>
 
   <parameter name="UserName"
-description="Please provide the SharePoint Site User Name to connect."
+description="Please provide the SharePoint Site User Name to connect which has full(Read & Write) access to SP document library."
 defaultValue="<SharePoint Site UserName>" tag="">
 
     <parameterEntry kind="XmlFile"
@@ -74,7 +74,7 @@ defaultValue="<SharePoint Site UserName>" tag="">
   </parameter>
 
   <parameter name="Password"
-description="Please provide the SharePoint Site Password to connect."
+description="Please provide the Password for above mentioned UserName"
 defaultValue="<SharePoint Site Password>" tag="">
 
     <parameterEntry kind="XmlFile"
