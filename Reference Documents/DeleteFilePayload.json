@@ -1,0 +1,8 @@
+{
+  "FileIdentifier": "<FileIdentifier GUID returned when new file is uploaded>",
+  "FileMetadata": [
+    {
+      "AccessSpecifier": "<private/public>"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "SourceFilePath": "<SF site URL>/services/data/<versionnumber(i.e. v45.0)>/sobjects/ContentVersion/0683K000000tfrEQAQ/VersionData",
+  "DestinationFilePath": "<Parent folder name>/<child folder name>/<filename>.png",
+  "UserName": "<SF user name>",
+  "Password": "<SF user password>",
+  "DocumentId": "<document unique id>",
+  "FileMetadata": [
+    {
+      "AccessSpecifier": "Private/Public",
+      "Classification": "<Classification data>",
+      "Description": "<Description data>",
+      "UploadedBy": "<file uploaded user name>",
+      "UploadedDate": "DD/MM/YYYY",
+      "ModifiedBy": "<file modified user name>",
+      "ModifiedDate": "DD/MM/YYYY"
+    }
+  ]
+}

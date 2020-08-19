@@ -1,0 +1,13 @@
+{
+  "FileIdentifier": "<FileIdentifier GUID returned when new file is uploaded>",
+  "FileMetadata": [
+    {
+      "AccessSpecifier": "<if file access specifier changed from private to public then file will be moved to public site & vice versa(private/public)>",
+      "PreviousAccessSpecifier": "<uploaded file current access specifier(private/public)>",
+      "Classification": "<Classification data>",
+      "Description": "<Description data>",
+      "ModifiedBy": "<file modified user name>",
+      "ModifiedDate": "DD/MM/YYYY"
+    }
+  ]
+}
