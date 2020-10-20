@@ -18,7 +18,7 @@ Please refer "ParametersSetting.txt" from Reference Documents folder to set para
 ## SharePoint Settings :
 Please create following Meatadata columns in SharePoint Libraries(Internal/External)
 - Classification: Single Line of text
-- Description: Multiple Line of Text(Plain Text)
+- GrantDescription: Multiple Line of Text(Plain Text)
 - UploadedBy: Single Line of text
 - UploadedDate: Single Line of text
 - ModifiedBy: Single Line of text
