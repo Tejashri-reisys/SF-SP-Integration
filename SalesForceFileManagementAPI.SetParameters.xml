@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="SFSPFileManagement" />
+  <setParameter name="SPPublicSiteUrl" value="" />
+  <setParameter name="SPPrivateSiteUrl" value="" />
+  <setParameter name="SPPublicDocumentLibrary" value="" />
+  <setParameter name="SPPrivateDocumentLibrary" value="" />
+  <setParameter name="UploadedFileUrl" value="" />
+  <setParameter name="UploadedFileUrlForDownload" value="" />
+  <setParameter name="UploadedPublicFileUrlForDownload" value="" />
+  <setParameter name="UserName" value="" />
+  <setParameter name="Password" value="" />
+  <setParameter name="LoginEndpoint" value="" />
+  <setParameter name="SFClientId" value="" />
+  <setParameter name="SFClientSecret" value="" />
+  <setParameter name="SFRequestURI" value="" />
+  <setParameter name="ClientId" value="" />
+  <setParameter name="ClientSecret" value="" />
+  <setParameter name="SFAPICallAfterMilliseconds" value="" />
+  <setParameter name="SPItemThresholdLimit" value="" />
+</parameters>
