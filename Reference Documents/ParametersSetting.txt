@@ -39,10 +39,10 @@
    <parameter name="SFRequestURI" description="As Salesforce default timeout is 2 minutes, if user uploading large file like 2 GB then it will take more than 2 minutes to upload file. In this case Salesforce will not get response because of timeout. So to handle this from Web API side we are calling Salesforce API which can update Log file. In this Log file we are updating all the response values which we can get after file uploaded. To update Log from Salesforce we need this request URI." defaultValue="" tag="">
       <parameterEntry kind="XmlFile" scope="obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='SFRequestURI']/@value" />
    </parameter>
-   <parameter name="ClientId" description="Please provide the Salesforce Site ClientId to connect with Salesforce through API" defaultValue="" tag="">
+   <parameter name="ClientId" description="Please provide the SharePoint Site ClientId to connect with SharePoint through API" defaultValue="" tag="">
       <parameterEntry kind="XmlFile" scope="obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ClientId']/@value" />
    </parameter>
-   <parameter name="ClientSecret" description="Please provide the Salesforce Site ClientSecret to connect with Salesforce through API" defaultValue="" tag="">
+   <parameter name="ClientSecret" description="Please provide the SharePoint Site ClientSecret to connect with SharePoint through API" defaultValue="" tag="">
       <parameterEntry kind="XmlFile" scope="obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ClientSecret']/@value" />
    </parameter>
    <parameter name="SFAPICallAfterMilliseconds" description="While uploading file if Web API took more than 1.4 Minute then we are calling Salesforce API to update Log file, that time we are considering this value." defaultValue="" tag="">
