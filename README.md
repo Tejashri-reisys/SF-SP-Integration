@@ -33,4 +33,6 @@ This setting is done in SharePoint Administrator Portal by SharePoint Admins onl
 ## How to Publish web deployment package to IIS
 please refer "How to publish web deployment package to IIS.docx" file from Reference Documents folder to publish web deployment package to IIS.
 
- 
+ ## How to register App at SharePoint tenant level
+please refer "How to register App at SharePoint tenant level.docx" file from Reference Documents folder to register App at SharePoint tenant level.
+
